@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/cmake_install.cmake",
+		"C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

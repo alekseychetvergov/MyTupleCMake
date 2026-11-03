@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/WORK/C++/Projects/MyTupleCMake/out/build/x64-release/vcpkg_installed/vcpkg/blds/detect_compiler/x64-windows-rel/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

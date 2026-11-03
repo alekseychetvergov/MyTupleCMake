@@ -1,0 +1,5 @@
+if(EXISTS "C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests/tuple_tests[1]_tests.cmake")
+  include("C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests/tuple_tests[1]_tests.cmake")
+else()
+  add_test(tuple_tests_NOT_BUILT tuple_tests_NOT_BUILT)
+endif()
