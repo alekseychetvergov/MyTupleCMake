@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/WORK/C++/Projects/MyTupleCMake/out/build/x64-release/cmake_install.cmake",
-		"C:/WORK/C++/Projects/MyTupleCMake/out/build/x64-release/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

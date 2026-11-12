@@ -1,0 +1,300 @@
+Start testing: Nov 12 17:31 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/11 Testing: TupleVectorBuffTest.DefaultConstructorSafety
+1/11 Test: TupleVectorBuffTest.DefaultConstructorSafety
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.DefaultConstructorSafety" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.DefaultConstructorSafety" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.DefaultConstructorSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.DefaultConstructorSafety
+[       OK ] TupleVectorBuffTest.DefaultConstructorSafety (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.DefaultConstructorSafety" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.DefaultConstructorSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: TupleVectorBuffTest.SizeConstructorSafety
+2/11 Test: TupleVectorBuffTest.SizeConstructorSafety
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.SizeConstructorSafety" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.SizeConstructorSafety" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.SizeConstructorSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.SizeConstructorSafety
+[       OK ] TupleVectorBuffTest.SizeConstructorSafety (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.SizeConstructorSafety" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.SizeConstructorSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity
+3/11 Test: TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity
+[       OK ] TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: TupleVectorBuffTest.AllocateReleasesPreviousBuffer
+4/11 Test: TupleVectorBuffTest.AllocateReleasesPreviousBuffer
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.AllocateReleasesPreviousBuffer" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.AllocateReleasesPreviousBuffer" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.AllocateReleasesPreviousBuffer
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.AllocateReleasesPreviousBuffer
+[       OK ] TupleVectorBuffTest.AllocateReleasesPreviousBuffer (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.AllocateReleasesPreviousBuffer" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.AllocateReleasesPreviousBuffer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty
+5/11 Test: TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty
+[       OK ] TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: TupleVectorBuffTest.CopyConstructorAndAssignmentSafety
+6/11 Test: TupleVectorBuffTest.CopyConstructorAndAssignmentSafety
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.CopyConstructorAndAssignmentSafety" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.CopyConstructorAndAssignmentSafety" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.CopyConstructorAndAssignmentSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.CopyConstructorAndAssignmentSafety
+[       OK ] TupleVectorBuffTest.CopyConstructorAndAssignmentSafety (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.CopyConstructorAndAssignmentSafety" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.CopyConstructorAndAssignmentSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: TupleVectorBuffTest.MoveConstructorAndAssignmentSafety
+7/11 Test: TupleVectorBuffTest.MoveConstructorAndAssignmentSafety
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorBuffTest.MoveConstructorAndAssignmentSafety" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorBuffTest.MoveConstructorAndAssignmentSafety" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorBuffTest.MoveConstructorAndAssignmentSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorBuffTest
+[ RUN      ] TupleVectorBuffTest.MoveConstructorAndAssignmentSafety
+[       OK ] TupleVectorBuffTest.MoveConstructorAndAssignmentSafety (0 ms)
+[----------] 1 test from TupleVectorBuffTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorBuffTest.MoveConstructorAndAssignmentSafety" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorBuffTest.MoveConstructorAndAssignmentSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: TupleVectorTest.MoveConstructorSafety
+8/11 Test: TupleVectorTest.MoveConstructorSafety
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorTest.MoveConstructorSafety" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorTest.MoveConstructorSafety" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorTest.MoveConstructorSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorTest
+[ RUN      ] TupleVectorTest.MoveConstructorSafety
+[       OK ] TupleVectorTest.MoveConstructorSafety (0 ms)
+[----------] 1 test from TupleVectorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorTest.MoveConstructorSafety" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorTest.MoveConstructorSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: TupleVectorTest.TotalSizeAlignment
+9/11 Test: TupleVectorTest.TotalSizeAlignment
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorTest.TotalSizeAlignment" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorTest.TotalSizeAlignment" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorTest.TotalSizeAlignment
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorTest
+[ RUN      ] TupleVectorTest.TotalSizeAlignment
+[       OK ] TupleVectorTest.TotalSizeAlignment (0 ms)
+[----------] 1 test from TupleVectorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorTest.TotalSizeAlignment" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorTest.TotalSizeAlignment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: TupleVectorTest.squareBracketsOperatorMath
+10/11 Test: TupleVectorTest.squareBracketsOperatorMath
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorTest.squareBracketsOperatorMath" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorTest.squareBracketsOperatorMath" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorTest.squareBracketsOperatorMath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorTest
+[ RUN      ] TupleVectorTest.squareBracketsOperatorMath
+[       OK ] TupleVectorTest.squareBracketsOperatorMath (0 ms)
+[----------] 1 test from TupleVectorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorTest.squareBracketsOperatorMath" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorTest.squareBracketsOperatorMath" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: TupleVectorTest.getMethodsMath
+11/11 Test: TupleVectorTest.getMethodsMath
+Command: "C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests.exe" "--gtest_filter=TupleVectorTest.getMethodsMath" "--gtest_also_run_disabled_tests"
+Directory: C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests
+"TupleVectorTest.getMethodsMath" start time: Nov 12 17:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:/tools/vcpkg/buildtrees/gtest/src/v1.18.0-e6987f02b9.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = TupleVectorTest.getMethodsMath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TupleVectorTest
+[ RUN      ] TupleVectorTest.getMethodsMath
+[       OK ] TupleVectorTest.getMethodsMath (0 ms)
+[----------] 1 test from TupleVectorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TupleVectorTest.getMethodsMath" end time: Nov 12 17:31 RTZ 2 (çèìà)
+"TupleVectorTest.getMethodsMath" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 12 17:31 RTZ 2 (çèìà)

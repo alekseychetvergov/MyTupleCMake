@@ -1,0 +1,23 @@
+Package: vcpkg-cmake-config
+Version: 2026-07-21
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e61a78e7912f6b70c2130d15386cfedb8d52050e0cb240b428f8bd7dcf1f05f1
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2025-08-07
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0788201167418ca56e463d89c0088d2fe30ade26142f5e4d9d552acaa667c0c1
+Status: install ok installed
+
+Package: gtest
+Version: 1.18.0
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-mingw-dynamic
+Multi-Arch: same
+Abi: a0438fbae880537144a14c29c0f45ee39cecb04557c955455ad3f6c814f37e59
+Description: Google Testing and Mocking Framework
+Status: install ok installed
+

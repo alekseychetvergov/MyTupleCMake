@@ -1,5 +1,0 @@
-add_test([=[TupleVectorTest.MoveConstructorSafety]=]  [==[C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests/tuple_tests.exe]==] [==[--gtest_filter=TupleVectorTest.MoveConstructorSafety]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[TupleVectorTest.MoveConstructorSafety]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\WORK\C++\Projects\MyTupleCMake\tests\tuple_tests.cpp:8]==] WORKING_DIRECTORY [==[C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[TupleVectorTest.TotalSizeAlignment]=]  [==[C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests/tuple_tests.exe]==] [==[--gtest_filter=TupleVectorTest.TotalSizeAlignment]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[TupleVectorTest.TotalSizeAlignment]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\WORK\C++\Projects\MyTupleCMake\tests\tuple_tests.cpp:50]==] WORKING_DIRECTORY [==[C:/WORK/C++/Projects/MyTupleCMake/out/build/fresh-debug-msvc/tests]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  tuple_tests_TESTS TupleVectorTest.MoveConstructorSafety TupleVectorTest.TotalSizeAlignment)

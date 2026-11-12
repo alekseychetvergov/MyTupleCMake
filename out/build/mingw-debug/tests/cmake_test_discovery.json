@@ -1,0 +1,73 @@
+{
+  "tests": 11,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TupleVectorBuffTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "DefaultConstructorSafety",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 11
+        },
+        {
+          "name": "SizeConstructorSafety",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 22
+        },
+        {
+          "name": "AllocateDeallocateCreatesWritableBufferAndStoresCapacity",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 33
+        },
+        {
+          "name": "AllocateReleasesPreviousBuffer",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 57
+        },
+        {
+          "name": "AllocateFailureAfterReallocationLeavesBufferEmpty",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 77
+        },
+        {
+          "name": "CopyConstructorAndAssignmentSafety",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 94
+        },
+        {
+          "name": "MoveConstructorAndAssignmentSafety",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "name": "TupleVectorTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "MoveConstructorSafety",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 134
+        },
+        {
+          "name": "TotalSizeAlignment",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 165
+        },
+        {
+          "name": "squareBracketsOperatorMath",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 175
+        },
+        {
+          "name": "getMethodsMath",
+          "file": "C:\/WORK\/C++\/Projects\/MyTupleCMake\/tests\/tuple_tests.cpp",
+          "line": 195
+        }
+      ]
+    }
+  ]
+}

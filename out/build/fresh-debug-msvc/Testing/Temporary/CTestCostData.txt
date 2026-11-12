@@ -1,3 +1,0 @@
-TupleVectorTest.MoveConstructorSafety 1 0.0329225
-TupleVectorTest.TotalSizeAlignment 1 0.0305935
----

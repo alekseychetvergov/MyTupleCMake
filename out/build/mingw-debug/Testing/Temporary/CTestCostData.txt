@@ -1,0 +1,12 @@
+TupleVectorBuffTest.DefaultConstructorSafety 1 0.0277472
+TupleVectorBuffTest.SizeConstructorSafety 1 0.0248863
+TupleVectorBuffTest.AllocateDeallocateCreatesWritableBufferAndStoresCapacity 1 0.0283528
+TupleVectorBuffTest.AllocateReleasesPreviousBuffer 1 0.0215301
+TupleVectorBuffTest.AllocateFailureAfterReallocationLeavesBufferEmpty 1 0.0266878
+TupleVectorBuffTest.CopyConstructorAndAssignmentSafety 1 0.0305064
+TupleVectorBuffTest.MoveConstructorAndAssignmentSafety 1 0.024541
+TupleVectorTest.MoveConstructorSafety 1 0.0197856
+TupleVectorTest.TotalSizeAlignment 1 0.0250646
+TupleVectorTest.squareBracketsOperatorMath 1 0.0219152
+TupleVectorTest.getMethodsMath 1 0.0247912
+---
