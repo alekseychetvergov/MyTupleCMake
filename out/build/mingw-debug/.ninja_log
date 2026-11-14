@@ -1,9 +1,0 @@
-# ninja log v7
-65	4878	8161970708252189	tests/CMakeFiles/tuple_tests.dir/__/src/Example.cpp.obj	7a05fdddebcde343
-32	5132	8161970707942249	CMakeFiles/MyTupleCMake.dir/src/Example.cpp.obj	27f726d6bd59133a
-21	5755	8161970707802156	CMakeFiles/MyTupleCMake.dir/src/main.cpp.obj	30b8a8a5626935c6
-5757	6329	8161970765173620	MyTupleCMake.exe	acc148073abb44b0
-49	9482	8161970708092212	tests/CMakeFiles/tuple_tests.dir/tuple_tests.cpp.obj	29ab6d12bbd8c7e
-9483	10468	8161970812140361	tests/tuple_tests.exe	c6f62403152ba372
-9483	10468	8161970812140361	tests/tuple_tests[1]_tests.cmake	c6f62403152ba372
-9483	10468	8161970812140361	C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/tuple_tests[1]_tests.cmake	c6f62403152ba372

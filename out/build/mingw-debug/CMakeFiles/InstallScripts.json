@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/cmake_install.cmake",
-		"C:/WORK/C++/Projects/MyTupleCMake/out/build/mingw-debug/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
