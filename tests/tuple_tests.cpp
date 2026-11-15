@@ -7,6 +7,43 @@
 #include "Example.hpp"
 #include <type_traits>
 #include <new>
+#include <cstdint>
+#include <memory_resource>
+
+namespace
+{
+    class RecordingMemoryResource final : public std::pmr::memory_resource
+    {
+    public:
+        size_t allocationCalls = 0;
+        size_t deallocationCalls = 0;
+        size_t lastAllocationAlignment = 0;
+
+    private:
+        void *do_allocate(size_t bytes, size_t alignment) override
+        {
+            ++allocationCalls;
+            lastAllocationAlignment = alignment;
+            return std::pmr::new_delete_resource()->allocate(bytes, alignment);
+        }
+
+        void do_deallocate(void *pointer, size_t bytes, size_t alignment) override
+        {
+            ++deallocationCalls;
+            std::pmr::new_delete_resource()->deallocate(pointer, bytes, alignment);
+        }
+
+        bool do_is_equal(const std::pmr::memory_resource &other) const noexcept override
+        {
+            return this == &other;
+        }
+    };
+
+    struct alignas(64) OverAligned
+    {
+        int value;
+    };
+}
 
 TEST(TupleVectorBuffTest, DefaultConstructorSafety)
 {
@@ -170,6 +207,25 @@ TEST(TupleVectorTest, TotalSizeAlignment)
 
     size_t expected_min_size = sizeof(char) + sizeof(int) + sizeof(char) + sizeof(double);
     EXPECT_GE(tplAlignCheck.sizeByte_, expected_min_size);
+}
+
+TEST(TupleVectorTest, AllocatorArgUsesStatefulAllocatorAndMaxTypeAlignment)
+{
+    RecordingMemoryResource resource;
+    using allocator = std::pmr::polymorphic_allocator<char>;
+
+    {
+        myTuple::tupleVector<char, allocator, OverAligned> value(
+            std::allocator_arg, allocator{&resource}, OverAligned{42});
+
+        ASSERT_NE(value.m_buffer_, nullptr);
+        EXPECT_EQ(reinterpret_cast<std::uintptr_t>(value.m_buffer_) % alignof(OverAligned), 0);
+        EXPECT_EQ(resource.allocationCalls, 1);
+        EXPECT_EQ(resource.lastAllocationAlignment, alignof(OverAligned));
+        EXPECT_EQ(value.get<0>().value, 42);
+    }
+
+    EXPECT_EQ(resource.deallocationCalls, 1);
 }
 
 TEST(TupleVectorTest, squareBracketsOperatorMath)

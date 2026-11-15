@@ -1,20 +1,38 @@
 #pragma once
 
+#include <cstddef>
 #include <utility>
 #include <memory>
+#include <type_traits>
 
 #include "TupleMeta.hpp"
 
 namespace myTuple
 {
-    template <typename T = char, typename allocator = std::allocator<T>>
+    template <typename... Types>
+    inline constexpr size_t tuple_vector_alignment_v = [] {
+        size_t alignment = 1;
+        ((alignment = alignment < alignof(Types) ? alignof(Types) : alignment), ...);
+        return alignment;
+    }();
+
+    template <typename T = char, typename allocator = std::allocator<T>, size_t Alignment = alignof(T)>
     class tupleVectorBuff
     {
+    private:
+        struct alignas(Alignment) aligned_allocation_unit
+        {
+            std::byte value;
+        };
+
     public:
         using size_type = size_t;
         using value_type = T;
         using traits_type = std::allocator_traits<allocator>;
         using allocator_type = allocator;
+        using allocation_unit = std::conditional_t<(Alignment <= alignof(T)), T, aligned_allocation_unit>;
+        using allocation_allocator = typename traits_type::template rebind_alloc<allocation_unit>;
+        using allocation_traits = std::allocator_traits<allocation_allocator>;
 
     public:
         value_type *m_buffer_ = nullptr;
@@ -62,14 +80,22 @@ namespace myTuple
             {
                 deallocate(capacityByte_);
             }
-            m_buffer_ = traits_type::allocate(alloc_, size);
+            allocation_allocator allocation_alloc(alloc_);
+            const size_type unit_count = size / sizeof(allocation_unit) +
+                                         (size % sizeof(allocation_unit) != 0);
+            m_buffer_ = reinterpret_cast<value_type *>(allocation_traits::allocate(allocation_alloc, unit_count));
             capacityByte_ = size;
         }
         void deallocate(size_type size) noexcept
         {
             if (m_buffer_ != nullptr)
             {
-                traits_type::deallocate(alloc_, m_buffer_, size);
+                allocation_allocator allocation_alloc(alloc_);
+                const size_type unit_count = size / sizeof(allocation_unit) +
+                                             (size % sizeof(allocation_unit) != 0);
+                allocation_traits::deallocate(allocation_alloc,
+                                              reinterpret_cast<allocation_unit *>(m_buffer_),
+                                              unit_count);
                 m_buffer_ = nullptr;
                 capacityByte_ = 0;
             }
@@ -78,7 +104,7 @@ namespace myTuple
     };
     //****************************************************************************************************************
     template <typename T = char, typename allocator = std::allocator<T>, typename... Types>
-    class tupleVector : public tupleVectorBuff<char, allocator>
+    class tupleVector : public tupleVectorBuff<char, allocator, tuple_vector_alignment_v<Types...>>
     {
     private:
         // Реверс последовательности для уничтожения элементов в обратном порядке
@@ -92,7 +118,7 @@ namespace myTuple
         using make_index_sequence_reverse = decltype(reverse_sequence(std::make_index_sequence<N>{}));
 
     public:
-        using Base = tupleVectorBuff<char, allocator>;
+        using Base = tupleVectorBuff<char, allocator, tuple_vector_alignment_v<Types...>>;
         using size_type = typename Base::size_type;
         using traits_type = typename Base::traits_type;
         using allocator_type = typename Base::allocator_type;
@@ -107,6 +133,12 @@ namespace myTuple
         size_type sizeByte_ = 0;
 
         tupleVector(Types... args)
+            : tupleVector(std::allocator_arg, allocator_type(), std::forward<Types>(args)...)
+        {
+        }
+
+        tupleVector(std::allocator_arg_t, const allocator_type &alloc, Types... args)
+            : Base(alloc)
         {
             if constexpr (countArgs_ > 0)
             {
