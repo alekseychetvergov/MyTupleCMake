@@ -100,3 +100,37 @@ ctest --test-dir out\build\mingw-debug --output-on-failure
 ```
 
 Для Release используйте пресет `mingw-release` и каталог `out\build\mingw-release`. Пресеты MinGW используют отдельный triplet vcpkg `x64-mingw-dynamic`; не переиспользуйте для них каталоги сборки MSVC.
+
+## Сборка и запуск на Linux (Debian / Ubuntu)
+
+Установите необходимые инструменты (компилятор GCC, CMake и Ninja):
+
+```bash
+sudo apt update && sudo apt install -y build-essential cmake ninja-build
+```
+
+Укажите путь к установленному `vcpkg` и перейдите в корневую папку проекта:
+
+```bash
+export VCPKG_ROOT=/путь/к/вашему/vcpkg
+cd /путь/к/проекту/MyTupleCMake
+```
+
+### Сборка Debug и запуск
+
+```bash
+cmake --preset linux-debug
+cmake --build --preset linux-debug
+./out/build/linux-debug/MyTupleCMake
+ctest --test-dir out/build/linux-debug --output-on-failure
+```
+
+### Сборка Release и запуск
+
+```bash
+cmake --preset linux-release
+cmake --build --preset linux-release
+./out/build/linux-release/MyTupleCMake
+ctest --test-dir out/build/linux-release --output-on-failure
+```
+
